@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
-    font-family: "Inconsolata", monospace;
+    font-family: "PT Serif", serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
+}
+
+header, footer, nav {
+    font-family: "Inconsolata", monospace;
 }
 
 nav {
@@ -46,7 +51,7 @@ footer {
 }
 
 footer a {
-    color:white;
+    color: white;
     padding: 10px;
 }
 
@@ -60,4 +65,55 @@ footer p.trademark {
 
 ul {
     padding-left: 30px;
+}
+
+li:not(.nav-item) {
+    padding: 10px;
+}
+
+div:has(> blockquote) {
+    background-color: #ededed;
+    margin-left: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+blockquote + p {
+    text-align: right;
+}
+
+/* New styles for job titles with hover effect */
+.job-title {
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #3A5A40;
+    color: #3A5A40;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.job-title:hover {
+    background-color: #f0f0f0;
+    border-bottom: 2px solid #3A5A40;
+}
+
+.job-description {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid #3A5A40;
+    padding: 15px;
+    max-width: 400px;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.job-title:hover .job-description {
+    display: block;
 }
