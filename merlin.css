@@ -83,27 +83,45 @@ blockquote + p {
 }
 
 .accordion .card {
-    margin-bottom: 20px; /* Add more space between each accordion box */
-    border-radius: 8px;  /* Optional: Adds rounded corners to the boxes */
-    border: 1px solid #3A5A40; /* Match border color with the theme */
+    margin-bottom: 20px;
+    border-radius: 8px; 
+    border: 1px solid #3A5A40; 
 }
 
 .accordion .card-header {
-    padding: 10px 20px; /* Adjust padding to control the header size */
+    padding: 10px 20px; 
 }
 
 .accordion .card-body {
-    padding: 15px; /* Adjust body padding for a more compact content area */
+    padding: 15px; 
 }
 
 .accordion .btn-link {
-    font-size: 1.1rem; /* Slightly reduce the font size for smaller headers */
-    padding: 0; /* Remove extra padding around the button text */
-    text-decoration: none; /* Remove underline from the accordion header */
+    font-size: 1.1rem; 
+    padding: 0; 
+    text-decoration: none; 
 }
 
 .accordion .btn-link:after {
     content: "+";
     font-weight: 900;
     float: right;
+}
+
+#imageCarousel img {
+    max-width: 600px;
+    max-height: 400px;
+    margin: 0 auto; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); 
+    margin: 20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
 }
