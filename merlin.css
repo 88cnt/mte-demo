@@ -108,6 +108,14 @@ blockquote + p {
     float: right;
 }
 
+.card-body p {
+    margin: 0px 0px 0px 0px;
+}
+
+.card-body ul li {
+    padding: 0px 0px 0px 0px;
+}
+
 #imageCarousel img {
     max-width: 600px;
     max-height: 400px;
