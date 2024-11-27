@@ -103,7 +103,6 @@ blockquote + p {
 }
 
 .accordion .btn-link:after {
-    content: "+";
     font-weight: 900;
     float: right;
 }
